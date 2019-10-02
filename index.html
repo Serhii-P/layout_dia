@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,800,900&amp;display=swap" rel="stylesheet">
   </head>
+
   <body>
     <header class="header">
       <div class="header__content">
           <div class="navigation__menu">
-              <div class="logo"><a href="#">Dia</a></div>
+              <div ><a class="logo" href="#">Dia</a></div>
               <div class="nav">
                   <ul class="navigation-list">
-                      <li><a class="nav-link is-active" href="#">Home</a></li>
+                      <li><a class="nav-link is-active" href="javascript:;">Home</a></li>
                       <li><a class="nav-link is-active" href="#">About us</a></li>
                       <li><a class="nav-link is-active" href="#">Services</a></li>
                       <li><a class="nav-link is-active" href="#">Work</a></li>
@@ -23,30 +24,68 @@
               </div>
               <div class="hire-link"><a class="nav-link" href="#">Hire us</a></div>
           </div>
+
           <div class="agency">
               <div class="agency-name"><h1>Global digital agency</h1></div>
               <div class="agency-description">
                   <p>By the same illusion which lifts the horizon of the sea to the level of<br>  the spectator on a hillside, the sable cloud beneath.</p>
               </div>
-              <button class="relevant__button">Learn more</button>
+              <button class="relevant__button relevant__button--white relevant__button--link">Learn more</button>
           </div>
 
-          <div class="header__photo">
-              <img src="images/header-photo.png" alt="Header photo" class="header-img">
-              <div class="sm-block">
-                  <ul class="vertical-text">
-                      <li><a class="s-media" href="#">Facebook</a></li>
-                      <li><a class="s-media" href="#">Twitter</a></li>
-                      <li><a class="s-media" href="#">Instagram</a></li>
-                  </ul>
-              </div>
-              <button class="btn slider__button slider-left" type="button">
-                  <img src="images/left.svg" alt="Slider left">
+          <div class="slider">
+            <div class="slider__image-wrapper">
+              <img class="slider__image" src="./images/header-photo.png" alt="">
+            </div>
+            <div class="slider__info">
+              <h3 class="slider__title title title--without-icon">INtro</h3>
+              <p class="slider__text">By the same illusion which lifts the horizon.</p>
+            </div>
+            <div class="slider__buttons">
+              <button class="slider__prev-button">
+                <svg
+                  width="15"
+                  height="26"
+                  viewBox="0 0 15 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.2305 1L1.23047 13L13.2305 25"
+                    stroke="#fff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                  </path>
+                </svg>
               </button>
-              <button class="btn slider__button slider-right" type="button">
-                  <img src="images/right.svg" alt="Slider right">
+              <button class="slider__next-button">
+                <svg
+                  width="15"
+                  height="26"
+                  viewBox="0 0 15 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.23047 0.999999L13.2305 13L1.23047 25"
+                    stroke="#fff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                  </path>
+                </svg>
               </button>
-              <p class="photo-text"><span>INtro</span><br>By the same illusion which <br> lifts the horizon.</p>
+            </div>
+            <ul class="soc">
+              <li class="soc-item">
+                <a class="soc-link soc-link--facebook" href="#">Facebook</a>
+              </li>
+              <li class="soc-item">
+                <a class="soc-link soc-link--twitter" href="#">Twitter</a>
+              </li>
+              <li class="soc-item">
+                <a class="soc-link soc-link--instargam" href="#">Instagram</a>
+              </li>
+            </ul>
           </div>
       </div>
   </header>
@@ -200,12 +239,15 @@
               <div class="form">
                   <div class="form__field">
                       <input type="text" placeholder="Your email" class="input">
+                      <span class="input-border"></span>
                   </div>
                   <div class="form__field">
                       <input type="text" placeholder="Your name" class="input">
+                      <span class="input-border"></span>
                   </div>
                   <div class="form__field">
                       <input type="text" placeholder="Your message" class="input">
+                      <span class="input-border"></span>
                   </div>
                   <div class="form__submit">
                       <button class="primary-button">Send</button>
@@ -240,6 +282,7 @@
                   <li>Work</li>
                   <li>Contact Us</li>
               </ul>
+
           </div>
       </div>
   </div>
